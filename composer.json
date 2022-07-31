@@ -12,7 +12,7 @@
   "require": {
       "illuminate/http": "^9.0",
       "illuminate/support": "^9.0",
-      "illuminate/validation": "^9.0",
+      "illuminate/validation": "^9.0"
   },
   "autoload": {
     "psr-4": {
