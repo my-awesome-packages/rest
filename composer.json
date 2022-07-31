@@ -1,0 +1,22 @@
+{
+  "name": "my-awesome-packages/rest",
+  "description": "Awesome rest",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "v.lebedev",
+      "email": "shadar147@gmail.com"
+    }
+  ],
+  "require": {
+      "illuminate/http": "^9.0",
+      "illuminate/support": "^9.0",
+      "illuminate/validation": "^9.0",
+  },
+  "autoload": {
+    "psr-4": {
+      "Awesome\\Rest\\": ["src/"]
+    }
+  }
+}
