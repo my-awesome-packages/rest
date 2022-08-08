@@ -186,7 +186,7 @@ abstract class AbstractFormRequest extends Request implements ValidatesWhenResol
     public function all($keys = null)
     {
         $data = parent::all($keys);
-        $data['dynamicPartUrl'] = $this->route()[2] ?? null;
+        $data['dynamicPartUrl'] = $this->route()->parameters() ?? null;
         return $data;
     }
 }
