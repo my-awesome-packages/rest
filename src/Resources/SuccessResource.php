@@ -9,10 +9,10 @@ class SuccessResource extends JsonResource
 {
     use Resourceable;
 
-    public function toArray(bool $res = true): array
+    public function toArray($request = null): array
     {
         return [
-            'success' => $this->bool($res)
+            'success' => $this->bool($this->resource['success'])
         ];
     }
 }
